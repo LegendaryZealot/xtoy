@@ -3,32 +3,17 @@
 #include <time.h>
 
 #define X 10
-#define Y 100
+#define Y 10
 
 int GetRandom(int max);
 
 int main(int argc, char const *argv[])
 {
-    int result[X];
-    int cacahe[X];
     for(int i=0;i<X;i++)
     {
         int tmp=GetRandom(Y-i);
-        for(int j=0;j<i;j++)
-        {
-            if(tmp>=cacahe[j])
-            {
-                tmp++;
-            }
-        }
-        cacahe[i]=tmp;
-        result[i]=tmp;
+        printf("the number of the rase:%d\n",tmp);
     }
-    for(int i=0;i<X;i++)
-    {
-        printf("%d\t",result[i]);
-    }
-    printf("\n");
     return 0;
 }
 

@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
         int tmp=GetRandom(Y-i);
         for(int j=0;j<i;j++)
         {
-            if(tmp>cacahe[j])
+            if(tmp>=cacahe[j])
             {
                 tmp++;
             }
